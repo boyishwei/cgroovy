@@ -8,13 +8,50 @@
 * compiled file, but it's generally better to create a new file per style scope.
 *
 *= require bootstrap
-*= require grails
-*= require main
 *= require mobile
 *= require_self
 */
 
-.footer{
+.footer {
     margin: 20px;
+}
 
+.topic-panel {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.briefing {
+    padding: 5px;
+    margin: 5px;
+    height: 80px;
+}
+
+img.briefing-avatar {
+    border-radius: 15px;
+    float: left;
+    margin: 5px;
+}
+
+.briefing-info{
+    float: left;
+}
+
+.briefing-content{
+    float: left;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+
+
+.briefing-status{
+  margin-top: 20px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #ddd;
 }
