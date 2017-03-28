@@ -20,7 +20,7 @@
 
         <div class="panel-body topics">
             <g:each in="${[1,2,3,1,1,1,1,1]}" var="index">
-                <g:render template="/topics/topic_briefing"></g:render>
+                <g:render template="/topic/topic_briefing"></g:render>
             </g:each>
         </div>
     </div>
