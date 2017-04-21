@@ -15,7 +15,7 @@
         %{--</div>--}%
         <div id="create-topic" class="content scaffold-create" role="main">
             <div class="panel panel-default">
-                <div class="panel-heading"><g:message code="default.create.label" args="[entityName]" /></div>
+                <div class="panel-heading">创建新的话题</div>
                 <div class="panel-body">
                     <g:if test="${flash.message}">
                     <div class="message" role="status">${flash.message}</div>
@@ -29,7 +29,29 @@
                     </g:hasErrors>
                     <g:form action="save">
                         <fieldset class="form">
-                            <g:textArea name="content" class="topic-content"/>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-group">
+                                        <div class="input-group-btn">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择节点<span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div><!-- /btn-group -->
+                                    <g:textField name="title" class="form-control" aria-label="..."/>
+                                    </div><!-- /input-group -->
+                                </div><!-- /.col-lg-6 -->
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <g:textArea name="content" class="topic-content"/>
+                                </div>
+                            </div>
                         </fieldset>
                         <fieldset class="buttons">
                             <g:submitButton name="create" class="save btn btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}" />
